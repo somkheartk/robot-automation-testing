@@ -4,7 +4,7 @@ Library           OperatingSystem
 
 *** Variables ***
 ${BROWSER}          Chrome
-${BASE_URL}         file://${EXECDIR}/sample-website
+${BASE_URL}         http://localhost:8080
 ${HOME_URL}         ${BASE_URL}/index.html
 ${LOGIN_URL}        ${BASE_URL}/login.html
 ${PRODUCTS_URL}     ${BASE_URL}/products.html
@@ -44,7 +44,7 @@ Input Username
 Input Password
     [Arguments]    ${password}
     [Documentation]    กรอกรหัสผ่าน
-    Input Password    id:password    ${password}
+    Input Text    id:password    ${password}
 
 Submit Login Form
     [Documentation]    ส่งฟอร์มเข้าสู่ระบบ
