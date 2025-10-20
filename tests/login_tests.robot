@@ -16,7 +16,7 @@ Login With Valid Credentials
     [Documentation]    ทดสอบการเข้าสู่ระบบด้วยข้อมูลที่ถูกต้อง
     [Tags]    login    positive
     Input Username    ${VALID_USERNAME}
-    Input Password    ${VALID_PASSWORD}
+    Input User Password    ${VALID_PASSWORD}
     Submit Login Form
     Wait Until Login Success Message Is Visible
     Success Message Should Contain    เข้าสู่ระบบสำเร็จ
@@ -26,7 +26,7 @@ Login With Invalid Credentials
     [Tags]    login    negative
     Go To    ${LOGIN_URL}
     Input Username    ${INVALID_USERNAME}
-    Input Password    ${INVALID_PASSWORD}
+    Input User Password    ${INVALID_PASSWORD}
     Submit Login Form
     Wait Until Error Message Is Visible
     Error Message Should Contain    ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง
@@ -35,7 +35,7 @@ Login With Empty Username
     [Documentation]    ทดสอบการเข้าสู่ระบบโดยไม่กรอกชื่อผู้ใช้
     [Tags]    login    negative    validation
     Go To    ${LOGIN_URL}
-    Input Password    ${VALID_PASSWORD}
+    Input User Password    ${VALID_PASSWORD}
     Submit Login Form
     # HTML5 validation should prevent submission
     Page Should Contain Element    id:username

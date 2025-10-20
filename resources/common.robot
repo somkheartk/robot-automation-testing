@@ -41,9 +41,9 @@ Input Username
     [Documentation]    กรอกชื่อผู้ใช้
     Input Text    id:username    ${username}
 
-Input Password
+Input User Password
     [Arguments]    ${password}
-    [Documentation]    กรอกรหัสผ่าน
+    [Documentation]    กรอกรหัสผ่าน (ใช้ Input Text เพื่อไม่ให้ชนกับ Input Password ของ SeleniumLibrary)
     Input Text    id:password    ${password}
 
 Submit Login Form
