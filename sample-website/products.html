@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้า - Demo Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>ระบบจัดการสินค้า</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="login.html">เข้าสู่ระบบ</a></li>
+                    <li><a href="products.html" class="active">สินค้า</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>รายการสินค้า</h2>
+                    <button id="addProductBtn" class="btn btn-primary">เพิ่มสินค้าใหม่</button>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="ค้นหาสินค้า...">
+                    <button id="searchBtn" class="btn">ค้นหา</button>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                    <div class="product-card" data-product-id="1">
+                        <img src="https://via.placeholder.com/250x200?text=Product+1" alt="สินค้า 1">
+                        <div class="product-info">
+                            <h3 class="product-name">แล็ปท็อป Dell XPS 13</h3>
+                            <p class="product-description">แล็ปท็อปสมรรถนะสูง จอ 13 นิ้ว</p>
+                            <p class="product-price">฿35,900</p>
+                            <div class="product-actions">
+                                <button class="btn btn-sm view-btn" data-id="1">ดูรายละเอียด</button>
+                                <button class="btn btn-sm btn-primary add-to-cart-btn" data-id="1">เพิ่มลงตะกร้า</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="2">
+                        <img src="https://via.placeholder.com/250x200?text=Product+2" alt="สินค้า 2">
+                        <div class="product-info">
+                            <h3 class="product-name">คีย์บอร์ด Mechanical RGB</h3>
+                            <p class="product-description">คีย์บอร์ดเกมมิ่ง ไฟ RGB</p>
+                            <p class="product-price">฿2,490</p>
+                            <div class="product-actions">
+                                <button class="btn btn-sm view-btn" data-id="2">ดูรายละเอียด</button>
+                                <button class="btn btn-sm btn-primary add-to-cart-btn" data-id="2">เพิ่มลงตะกร้า</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="3">
+                        <img src="https://via.placeholder.com/250x200?text=Product+3" alt="สินค้า 3">
+                        <div class="product-info">
+                            <h3 class="product-name">เมาส์ Wireless Gaming</h3>
+                            <p class="product-description">เมาส์ไร้สายสำหรับเกมมิ่ง</p>
+                            <p class="product-price">฿1,590</p>
+                            <div class="product-actions">
+                                <button class="btn btn-sm view-btn" data-id="3">ดูรายละเอียด</button>
+                                <button class="btn btn-sm btn-primary add-to-cart-btn" data-id="3">เพิ่มลงตะกร้า</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="4">
+                        <img src="https://via.placeholder.com/250x200?text=Product+4" alt="สินค้า 4">
+                        <div class="product-info">
+                            <h3 class="product-name">หูฟัง Bluetooth ANC</h3>
+                            <p class="product-description">หูฟังไร้สายตัดเสียงรบกวน</p>
+                            <p class="product-price">฿3,990</p>
+                            <div class="product-actions">
+                                <button class="btn btn-sm view-btn" data-id="4">ดูรายละเอียด</button>
+                                <button class="btn btn-sm btn-primary add-to-cart-btn" data-id="4">เพิ่มลงตะกร้า</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cartInfo" class="cart-info">
+                    <p>สินค้าในตะกร้า: <span id="cartCount">0</span> รายการ</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ระบบจัดการสินค้า. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
