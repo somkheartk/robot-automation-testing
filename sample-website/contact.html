@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา - Demo Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>ระบบจัดการสินค้า</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="login.html">เข้าสู่ระบบ</a></li>
+                    <li><a href="products.html">สินค้า</a></li>
+                    <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2>ติดต่อเรา</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>ข้อมูลติดต่อ</h3>
+                        <div class="info-item">
+                            <strong>ที่อยู่:</strong>
+                            <p>123 ถนนสุขุมวิท แขวงคลองเตย เขตคลองเตย กรุงเทพฯ 10110</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>โทรศัพท์:</strong>
+                            <p id="contactPhone">02-123-4567</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>อีเมล:</strong>
+                            <p id="contactEmail">contact@example.com</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>เวลาทำการ:</strong>
+                            <p>จันทร์ - ศุกร์: 09:00 - 18:00</p>
+                            <p>เสาร์ - อาทิตย์: 10:00 - 17:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h3>ส่งข้อความถึงเรา</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">ชื่อ-นามสกุล:</label>
+                                <input type="text" id="name" name="name" placeholder="กรอกชื่อ-นามสกุล" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">อีเมล:</label>
+                                <input type="email" id="email" name="email" placeholder="กรอกอีเมล" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">หัวเรื่อง:</label>
+                                <input type="text" id="subject" name="subject" placeholder="กรอกหัวเรื่อง" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">ข้อความ:</label>
+                                <textarea id="message" name="message" rows="5" placeholder="กรอกข้อความ" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">ส่งข้อความ</button>
+                            <div id="contactMessage" class="message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ระบบจัดการสินค้า. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
